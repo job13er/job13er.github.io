@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/lib
+
+[include]
+
+[libs]
+
+[lints]
+untyped-type-import=error
+
+[options]
+
+[strict]

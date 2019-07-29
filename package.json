@@ -1,0 +1,63 @@
+{
+  "name": "job13er.github.io",
+  "version": "0.0.1",
+  "description": "User github pages repo",
+  "bin": {
+    "bumpr": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:job13er/job13er.github.io.git"
+  },
+  "engines": {
+    "node": ">= 12.7.0"
+  },
+  "author": "Adam Meadows [https://github.com/job13er]",
+  "license": "MIT",
+  "homepage": "https://job13er.github.io",
+  "scripts": {
+    "build": "yarn run build-storybook && mv .out/* . && rm -rf .out",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "clean": "rm -rf *.html *.ico sb_dll *.bundle.js*",
+    "lint": "eslint *.js stories src",
+    "storybook": "start-storybook"
+  },
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@material-ui/core": "^4.3.0",
+    "@material-ui/icons": "^4.2.1",
+    "@storybook/react": "^5.1.9",
+    "bootstrap": "^4.3.1",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-dom": "^16.8.6",
+    "react-vertical-timeline-component": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-storysource": "^5.1.9",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-flowtype": "^3.12.2",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "flow-bin": "^0.104.0",
+    "flow-typed": "^2.6.0",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

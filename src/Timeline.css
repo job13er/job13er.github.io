@@ -1,0 +1,7 @@
+.vertical-timeline-element--red .vertical-timeline-element-content {
+  border-top: 3px solid #dc3545;
+}
+
+.vertical-timeline-element--blue .vertical-timeline-element-content {
+  border-top: 3px solid #007bff;
+}
