@@ -16,7 +16,7 @@
   "license": "MIT",
   "homepage": "https://job13er.github.io",
   "scripts": {
-    "build": "yarn run build-storybook && mv .out/* . && rm -rf .out",
+    "build": "yarn run build-storybook && rm -rf docs && mv .out/* docs/ && rm -rf .out",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "clean": "rm -rf *.html *.ico sb_dll *.bundle.js*",
     "lint": "eslint *.js stories src",
